@@ -10,6 +10,7 @@ class Vehicle():
     def drive(self, speed):
         self.mode = "driving"
         self.speed = speed
+        print("driving my", self.enginetype, self.__class__.__name__, "at", self.speed)
 
 class Car(Vehicle):
     def __init__(self, enginetype):
@@ -17,10 +18,6 @@ class Car(Vehicle):
         self.wheels = 4
         self.doors = 4
         self.enginetype = enginetype
-
-    def drive(self, speed):
-        super().drive(speed)
-        print("driving my", self.enginetype, "car at ", self.speed)
 
 class Motorcycle(Vehicle):
     def __init__(self,enginetype, hassidecar):
@@ -31,10 +28,6 @@ class Motorcycle(Vehicle):
         else:
             self.wheels =2
         self.enginetype = enginetype
-
-    def drive(self, speed):
-        super().drive(speed)
-        print("driving my", self.enginetype, "motorcycle at", self.speed)
 
 mini = Car("gas")
 escape = Car("hybrid")
