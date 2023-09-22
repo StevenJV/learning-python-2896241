@@ -6,14 +6,15 @@
 
 def main():
     # Open a file for writing and create it if it doesn't exist
-    mode = "w" #write (not append), create if doesn't exist
-    myfile = open("textfile.txt", mode)
+    # mode = "w" #write (not append), create if doesn't exist
+    # myfile = open("textfile.txt", mode)
 
     # Open the file for appending text to the end
-
+    mode = "a" # append to existing file, create if doesn't exist
+    myfile = open("textfile.txt", mode)
 
     # write some lines of data to the file
-    for i in range(10):
+    for i in range(10,15):
         mystring = "line "+str(i)+"\n"
         myfile.write(mystring)
 
