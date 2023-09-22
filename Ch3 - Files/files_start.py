@@ -30,10 +30,16 @@ def main():
         # print(contents)
         # #for reading, "no need" for closing
 
-        # readlines() gets a list of all lines into a var
-        fl = myfile.readlines()
-        for x in fl:
-            print(x)
+        # # readlines() gets a list of all lines into a var
+        # fl = myfile.readlines()
+        # for x in fl:
+        #     print(x)
+
+        # readline() gets one line at a time
+        l = myfile.readline()
+        print(l)
+        l = myfile.readline()
+        print(l)
 
 if __name__ == "__main__":
     main()
