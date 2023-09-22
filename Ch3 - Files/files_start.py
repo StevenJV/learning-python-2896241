@@ -6,7 +6,7 @@
 
 def main():
     # Open a file for writing and create it if it doesn't exist
-    mode = "w+" #write (not append), create if doesn't exist
+    mode = "w" #write (not append), create if doesn't exist
     myfile = open("textfile.txt", mode)
 
     # Open the file for appending text to the end
